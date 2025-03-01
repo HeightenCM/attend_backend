@@ -1,5 +1,6 @@
 const app = require("./src/app");
 const database = require("./src/config/database");
+require("./src/config/relations")();
 require("dotenv").config();
 
 try {
