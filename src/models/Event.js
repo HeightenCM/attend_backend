@@ -9,6 +9,8 @@ const Event = database.define("Event", {
     primaryKey: true,
   },
   name: { type: DataTypes.STRING, allowNull: false },
+  budget: { type: DataTypes.INTEGER, allowNull: false },
+  datetime: { type: DataTypes.DATE, allowNull: false}
 });
 
 module.exports = Event;
